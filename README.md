@@ -1,5 +1,5 @@
-#For DXC Technology Assessment
-#EncoderDecoder Java Application
+# For DXC Technology Assessment
+# EncoderDecoder Java Application
 <br/>
 ##Steps to run the code
 1. Download both .java files (EncoderDecoder.java and Main.java)
