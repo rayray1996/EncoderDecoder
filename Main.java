@@ -29,17 +29,13 @@ public class Main {
 
         System.out.println("Enter the string to encode or decode: ");
         String input = sc.nextLine();
-        // if a user choice is empty, null, not fully capitalized or the first character
+        // if a user choice is empty, null or the first character
         // of the input decoded string is not a valid offset character then force them
         // to re-enter a valid input
         while (input == null ||
                 input.equals("") ||
-                !(input.toUpperCase().hashCode() == input.hashCode()) ||
                 (choice.equals("D") && !EncoderDecoder.validOffsetChar(String.valueOf(input.charAt(0))))) {
             if (input == null || input.equals("")) {
-                System.out.println("Enter the string to encode or decode: ");
-            } else if (!(input.toUpperCase().hashCode() == input.hashCode())) {
-                System.out.println("Input string to encode or decode must be capitalized");
                 System.out.println("Enter the string to encode or decode: ");
             } else {
                 System.out.println("Offset character of the encoded text is invalid");

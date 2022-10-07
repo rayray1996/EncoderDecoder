@@ -25,6 +25,11 @@ public class EncoderDecoder {
                 continue;
             } else {
                 int idxOfCurr = listOfChar.indexOf(curr);
+                
+                if(idxOfCurr < 0) {
+                    sb.append(curr);
+                    continue;
+                }
                 int pos = math(idxOfCurr, offsetVal);
 
                 String encodedChar = String.valueOf(listOfChar.charAt(pos));
@@ -57,6 +62,12 @@ public class EncoderDecoder {
                     continue;
                 } else {
                     int idxOfCurr = listOfChar.indexOf(curr);
+
+                    if(idxOfCurr < 0) {
+                        sb.append(curr);
+                        continue;
+                    }
+                    
                     sb.append(String.valueOf(listOfChar.charAt((idxOfCurr + offsetVal) % 44)));
                 }
             }
