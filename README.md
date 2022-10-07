@@ -1,4 +1,3 @@
-# For DXC Technology Assessment
 # EncoderDecoder Java Application
 <br/>
 ##Steps to run the code
